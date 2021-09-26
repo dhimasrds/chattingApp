@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="110">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="70dp"
+            android:layout_weight="20"
+            android:layout_gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_weight="75"
+            >
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oxygen_bold"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="Dhimas SAputra"
+                />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+                android:fontFamily="@font/oxygen_regular"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="Hello dhimas apa kabarmu hari ini"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:fontFamily="@font/oxygen_bold"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:text="sun"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
