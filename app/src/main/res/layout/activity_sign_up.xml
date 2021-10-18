@@ -38,7 +38,7 @@
                 android:layout_above="@+id/mainLayout"
                 android:layout_alignParentTop="true">
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -51,8 +51,23 @@
                         android:background="@drawable/rounded_profile"
                         android:fontFamily="@font/oxygen_regular"
                         android:text="Select Photo"
-                        android:textColor="@color/white" />
-                </LinearLayout>
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_select_photo"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_profile"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </RelativeLayout>
 
 

@@ -10,10 +10,15 @@ class Users {
     var uid : String? = null
     var uriUrl : String? = null
 
-    constructor(username: String?, email: String?, uid: String?, uriUrl: String?) {
-        this.username = username
-        this.email = email
-        this.uid = uid
-        this.uriUrl = uriUrl
-    }
+
+    constructor()
+
+
+
+//    constructor(username: String?, email: String?, uid: String?, uriUrl: String?) {
+//        this.username = username
+//        this.email = email
+//        this.uid = uid
+//        this.uriUrl = uriUrl
+//    }
 }

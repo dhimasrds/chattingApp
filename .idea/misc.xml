@@ -19,6 +19,7 @@
         <entry key="app/src/main/res/drawable/password_toggle_color.xml" value="0.1796875" />
         <entry key="app/src/main/res/drawable/rounded_profile.xml" value="0.11666666666666667" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
         <entry key="app/src/main/res/layout/login_content.xml" value="0.33" />

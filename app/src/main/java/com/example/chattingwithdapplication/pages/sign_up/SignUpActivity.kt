@@ -75,8 +75,11 @@ class SignUpActivity : AppCompatActivity() {
         if(requestCode == 0 && resultCode == Activity.RESULT_OK && data != null){
              uriPhoto = data.data
             val bitmap = MediaStore.Images.Media.getBitmap(contentResolver,uriPhoto)
-            val bitmapDrawable = BitmapDrawable(bitmap)
-            binding.btnSelectPhoto.setBackgroundDrawable(bitmapDrawable)
+
+            binding.ivSelectPhoto.setImageBitmap(bitmap)
+            binding.btnSelectPhoto.alpha =0f
+//            val bitmapDrawable = BitmapDrawable(bitmap)
+//            binding.btnSelectPhoto.setBackgroundDrawable(bitmapDrawable)
         }
     }
 
@@ -119,7 +122,11 @@ class SignUpActivity : AppCompatActivity() {
         val uid = FirebaseAuth.getInstance().uid
         val ref = FirebaseDatabase.getInstance().getReference("/Users/$uid")
 
-        users = Users(username.toString(),email.toString(),uid.toString(), imageUrl)
+        users = Users()
+        users.username = username.toString()
+        users.email = email.toString()
+        users.uid = uid.toString()
+        users.uriUrl = imageUrl
 
         ref.setValue(users).addOnSuccessListener {
             Log.d("uploadImageToFireBase","Succsessfully uploade user")

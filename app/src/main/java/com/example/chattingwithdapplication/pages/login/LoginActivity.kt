@@ -32,8 +32,6 @@ class LoginActivity : AppCompatActivity() {
             vm = viewModel
         }
 
-
-
         listener()
     }
 
